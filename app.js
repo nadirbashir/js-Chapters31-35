@@ -77,9 +77,33 @@
 // document.write("On Reeference date" + currentDate + ", <br>" + (currentDate.getTime() - d.getTime()) /1000 + "seconds had passed since biginning of 2021");
 
 // /********Quest. 11 *********/
+// var d = new Date();
+// document.write("Current date: " + d);
+// d.setHours(d.getHours() - 1);
+// document.write("<br>1 hour ago, it was " + d);
+
+// //b.
+
+//     var d = new Date();
+//     var str = d.toString();
+//    document.write("1 hour ago time was " + str.replace(str.slice(16,18),str.slice(16,18) - 1));
 
 
+// /********Quest. 12 *********/
 
-// /********Quest. 1 *********/
-// /********Quest. 1 *********/
-// /********Quest. 1 *********/
+// var d = new Date();
+// document.write("Current Date: " + d);
+// d.setFullYear(d.getFullYear() - 100);
+// document.write("<br>100 Years back, it was " + d);
+
+// /********Quest. 13 *********/
+
+// var inp = new Date(prompt("Enter your date of birth in given format jul 25, 1995"));
+// var inpMilli = inp.getTime();
+// var currentDate = new Date();
+// var currentMilli = currentDate.getTime();
+// var diffMilli = currentMilli - inpMilli;
+// var age = Math.floor(diffMilli/(1000*60*60*24*30*12));
+// document.write("your age is: " + age);
+
+// /********Quest. 14 *********/
