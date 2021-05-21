@@ -107,3 +107,23 @@
 // document.write("your age is: " + age);
 
 // /********Quest. 14 *********/
+
+var userName = prompt("Enter name");
+var months = ["January", "Feburary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var units = +prompt("Enter Number of units unit");
+var currentMonth = new Date();
+var chargesPerUnit = 16
+var lateCharges = 350;
+var netAmount = units * chargesPerUnit;
+document.write("<h2>K-Electric Bill</h2>")
+document.write("User Name: " + userName);
+document.write("<br> Month: " + months[currentMonth.getMonth()]);
+document.write("<br>Number of units: " + units);
+document.write("<br>Charges per unit: " + chargesPerUnit);
+document.write("<br> <br>Net Amount payable within due date: " + netAmount);
+document.write("<br>Late Payment surcharge: " + lateCharges)
+document.write("<br>Net Amount payable within due date: " + netAmount);
+document.write("<br>Gross Amount payable after due date: " + (netAmount + lateCharges));
+
+
+
